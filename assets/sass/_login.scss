@@ -1,0 +1,106 @@
+/***************************************************
+ ************* FORMULARIO LOGIN ********************
+ ***************************************************/
+ .main-login{
+    background-image: url(../img/UFPS/estudiantes.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+   .contenedor-principal{
+
+        &.formulario{
+           background-color: $fondo-contenedor-principal;
+           width: 60%;
+           max-width: 31rem;
+           min-width: 31rem;
+           padding: 1.5rem;
+           border-radius: 0.9375rem;
+           box-shadow: $box-shadow-uno;
+
+           .titulo{
+               margin: 1.25rem;
+               margin-bottom: 0rem;
+               font-size: 1.7rem;             
+           }
+
+           .subtitulo{
+               font-size: 1.3rem;
+           }
+
+           .input-text{
+               min-width: 18.75rem;
+               max-width: 18.75rem;
+               margin: 1rem auto;
+               font-size: $valor-letra-login;
+           }
+
+           .contenedor-selector{
+               margin: 1rem auto;
+               margin-top: 0rem;
+               .selector{
+                   margin: 0rem 1rem;
+                   .input-selector{
+                      font-size: $valor-letra-login;
+                    } 
+               }   
+               
+               .span{
+                   margin: 0rem 1rem;
+                   display: block;
+                   text-align: right;
+                   font-size: $valor-letra-login;
+                  .enlace{
+                      font-size: $valor-letra-login;
+                      font-weight: bold;
+                      text-transform: capitalize;
+                      color:$blanco;
+                   }
+               }
+            }   
+            
+            .ingresar{
+                &.btn{
+                    text-transform: capitalize;
+                    font-weight: bold;
+                    padding: 1rem 1.5rem;
+                }
+            }
+       }
+   }
+   @media screen and (max-width: 820px) {
+        .contenedor-principal{
+            &.formulario{
+                max-width: 25rem;
+                min-width: 25rem; 
+
+                .input-text{
+                    min-width: 15rem;
+                    max-width: 15rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 413px) {
+        .contenedor-principal{
+            &.formulario{
+                max-width: 18rem;
+                min-width: 18rem; 
+
+                .input-text{
+                    min-width: none;
+                    max-width: none;
+                    width: 90%;
+                }
+
+                .titulo{
+                    font-size: 1.5rem;
+                }
+
+            }
+        }
+    }
+}
+

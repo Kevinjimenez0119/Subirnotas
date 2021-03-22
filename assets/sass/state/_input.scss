@@ -1,0 +1,42 @@
+@import "variables";
+@import "minxis";
+
+/***************************************************
+ ******************* INPUTS ************************
+ ***************************************************/
+//***********************************************
+// INPUTS
+//***********************************************
+
+.input-text{
+    @include input();
+    
+    &:hover{
+        border-color: transparent;
+        border-bottom-color: $color-border-input-hover ;
+    }
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.input-selector{
+    @include input();
+    display: block;
+    width: auto;
+}
+
+.input-text-area{
+    @include input();
+    height: 10rem;
+    width: 100%;
+    text-align: initial;
+    align-self: initial;
+    &:hover{
+        border-color: transparent;
+        border-bottom-color: $color-border-input-hover ;
+    }
+}
+
+

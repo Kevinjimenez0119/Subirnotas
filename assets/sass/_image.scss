@@ -1,0 +1,26 @@
+
+@import "state/variables";
+
+/***************************************************
+ ****************** IMAGE APP **********************
+ ***************************************************/
+.logo{
+    width: 6.5rem;
+    height: 6.5rem;
+    display: block;
+    margin: auto;
+    transition: transform 0.5 linear;
+    cursor: pointer;
+
+    &:hover{
+        box-shadow: $box-shadow-uno;
+        transform: scale(0.95);
+    }
+}
+
+.icono{
+    transition: all 0.6 linear;
+    &:hover{
+        transform: scale(0.95);
+    }
+}

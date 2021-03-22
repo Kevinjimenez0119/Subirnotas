@@ -1,0 +1,110 @@
+
+
+//***********************************************
+// VARIABLES COLOR
+//***********************************************
+
+
+// RGBA
+$negro-rgba-azulado: rgba(19, 35, 47, .8);
+$rojo-rgba-ligero: rgba(255, 64, 64, .7);
+$blanco-rgba-blanco: rgba(255, 255, 255, .7);
+$negro-rgba-tranparente: rgba(0, 0, 0, 0.8);
+$verde-rgba-lago:rgba(128, 107, 57, .7);
+$amarrilo-rgba-apagado: rgba(215, 156, 38, .7);
+
+// NORMAL
+$blanco: #FFF; 
+$negro-oscuro: #34332F;
+$rojo-ligero: #FF4040;
+$gris: #C7C7C7;
+$azul-ligero: #4040FF;
+$verde-claro:#008080;
+$piel: #FFEBCD;
+
+// DEGrADADOS
+$degradado-uno: linear-gradient(90deg, $piel, $rojo-rgba-ligero);
+$degradado-dos: linear-gradient(40deg , $rojo-rgba-ligero,$piel);
+
+// BOX SHADOW
+$box-shadow-uno: 0px 0px 30px -5px $negro-rgba-azulado; 
+
+$text-shadow-uno: 1px 1px $blanco, -1px -1px transparent;
+
+
+//***********************************************
+// MENU
+//***********************************************
+$fondo-color-menu-inicio: $degradado-dos;
+
+$color-letra-menu-inicio:$blanco;
+
+$box-shadow-menu: $box-shadow-uno;
+
+
+
+//***********************************************
+// LOGIN
+//***********************************************
+$valor-letra-login:0.9rem;
+
+//***********************************************
+// CONTENEDORES
+//***********************************************
+
+$fondo-contenedor-principal: $rojo-rgba-ligero;
+$color-letra-contenedor-principal: $blanco;
+
+//***********************************************
+// INPUT
+//***********************************************
+$fondo-color-input-text:$blanco-rgba-blanco;
+$fondo-color-input-dos:$gris;
+
+$color-letra-input: $negro-oscuro;
+
+$color-border-input:$blanco;
+$color-border-input-hover: $negro-rgba-azulado;
+
+//***********************************************
+// ENCABEZADOS
+//***********************************************
+$color-text-h1-dos:$rojo-rgba-ligero;
+$color-text-h1-tres:$verde-rgba-lago;
+
+//***********************************************
+// LABEL
+//***********************************************
+$color-text-label: $negro-oscuro;
+
+
+//***********************************************
+// TABLAS
+//***********************************************
+$fondo-color-tabla-thead: $degradado-uno;
+$color-letra-tabla-thead: $blanco;
+
+$box-shadow-tabla:$box-shadow-uno;
+
+$border-tabla: 1px solid $piel;
+$border-tabla-hover: 1px solid $rojo-rgba-ligero;
+
+$fondo-color-tabla-tbody-par: $blanco;
+$fondo-color-tabla-tbody-impar: $piel;
+
+
+//***********************************************
+// BOTONES
+//***********************************************
+$fondo-color-btn:$negro-rgba-azulado;
+
+$color-letra-btn: $gris;
+$color-letra-btn-hover:$rojo-ligero;
+$color-letra-enlace: $verde-rgba-lago;
+
+//***********************************************
+// HR
+//***********************************************
+
+$color-border-hr:$negro-rgba-azulado;
+$color-border-hr-hover:$rojo-rgba-ligero;

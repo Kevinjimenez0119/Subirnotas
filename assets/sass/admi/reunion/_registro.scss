@@ -1,0 +1,114 @@
+@import "../../state/variables";
+
+/***************************************************
+ ************* ADMI REUNION/REGISTRO ***************
+ ***************************************************/
+body{
+    overflow-y: scroll;
+    .contenedor-reunion-registro{
+        background-color:transparent;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "Personal          Personal              Personal"
+                             "Medida_Torso      Medida_Cadera         Medida_Abajo ";
+        gap: 1.5rem;
+    
+        .reunion-registro__personal{
+            grid-area: Personal;  
+        }
+
+        .contenedor-centro-form{
+            background: $degradado-uno;
+            padding: 1.5rem 0rem ;
+            width: 100%;
+    
+            .titulo{
+                font-size: 2rem;
+                font-style: normal;
+            }
+    
+            .subtitulo{
+                font-size: 1.5rem;
+                color:$color-text-h1-dos;
+                font-weight: bold;
+                text-shadow: $text-shadow-uno;
+            }
+    
+            .casillas{
+                width: 50%;
+                max-width: 56rem;
+                min-width: 25rem;
+                margin: 1rem auto;
+                .casillas-form{
+                    padding: 1rem;
+                    width: 90%;
+                    margin: auto;
+                    text-align: center;
+    
+                    .label{
+                        width: 30%;
+                    }
+                    .input-text{
+                        width: 70%;
+                        min-width: 18rem;
+                        max-width: 40rem;
+                    }
+                }
+            }
+        }  
+    
+        .reunion-registro__medida__torso{
+            grid-area: Medida_Torso;  
+        }
+
+        .reunion-registro__medida__cadera{
+            grid-area: Medida_Cadera;  
+        }
+
+        .reunion-registro__medida__abajo{
+            grid-area: Medida_Abajo;  
+        }
+
+        .reunion-registro__medida__torso,
+        .reunion-registro__medida__cadera,
+        .reunion-registro__medida__abajo{
+            .contenedor-centro-form{
+                .casillas{
+                    width: 90%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    .casillas-form{
+                        width: 30%;
+                        padding: 0rem;
+                        .label{
+                            text-align: left;
+                            width: 100%;
+                            padding: 0rem 1rem;
+                            margin: 0rem;
+                        }
+
+                        .input-text{
+                            max-width: 100%;
+                            min-width: 7rem;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 1096px) {
+            grid-template-rows: repeat(4, auto);
+            grid-template-areas: "Personal          Personal              Personal"
+                                 "Medida_Torso      Medida_Torso          Medida_Torso"
+                                 "Medida_Cadera     Medida_Cadera         Medida_Cadera"
+                                 "Medida_Abajo      Medida_Abajo          Medida_Abajo";
+
+        }   
+    }
+}
+
+ 

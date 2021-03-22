@@ -1,0 +1,75 @@
+.contenedor-resgistro-informacion-principal{
+
+    form{
+        &.registro{
+            width: 60%;
+            max-width: 40rem;
+            min-width: 30rem;
+            box-shadow: $box-shadow-tabla;
+            margin: auto;
+            border-radius: 0.9rem;
+            background-color: $blanco;
+
+            .encabezado{
+                width: 100%;
+                height: auto;
+                padding: 1rem;
+                border-radius: 0.9rem;
+                background: $degradado-uno;
+                .titulo{
+                    margin: 1rem 0rem;
+                    font-size: 2.2rem;
+                    color:$color-letra-contenedor-principal;
+                    text-transform: capitalize;
+                }
+            }  
+
+            .campos{
+                padding: 1rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        form{
+            &.registro{
+                width: 100%;
+                max-width: none;
+                min-width: 0rem;
+
+            }
+        }
+    }
+
+    @media screen and (max-width: 478px) {
+
+        form{
+            &.registro{
+                width: 100%;
+                max-width: none;
+                min-width: 0rem;
+
+                .encabezado{
+                    .titulo{
+                        font-size: 1.5rem;
+                    }
+                }  
+
+                .linea-dos{
+                    justify-content: center;
+                    flex-direction: column;                    
+                }
+
+                .linea{
+                    padding: 0rem;
+                    width: 100%;
+                    label{
+                        width: 100%;
+                        text-align: left;
+                    }
+                }  
+
+            }
+        }
+    }
+}

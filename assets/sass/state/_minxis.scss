@@ -1,0 +1,92 @@
+
+@import "variables";
+
+//***********************************************
+//  FUNCIONES CONTENEDORES
+//***********************************************
+@mixin contenedor($fondo:transparent, $size:1rem) {
+	width: 100%;
+	overflow: hidden;
+	margin: 0em;
+	padding: 0em;
+	background-color: $fondo;
+	font-size: $size;
+}
+
+//***********************************************
+//  FUNCIONES  BOTONES
+//***********************************************
+@mixin botones ($fondo:transparent) {
+	width: auto;
+	height: auto;
+	padding: 0.825rem 0.9375rem;
+	color: $color-letra-btn;
+	outline: none;
+	box-shadow: none;
+	background-color: $fondo;
+	transition: all 0.5s linear;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: 100;
+	text-transform: uppercase;
+    text-align: center;
+    border: none;
+}
+
+//***********************************************
+ //  FUNCIONES INPUT
+ //***********************************************
+ @mixin input() {
+	font-size: 1.25rem;
+	display: block;
+	width: 100%;
+	padding: 0.4125rem 0.625rem;
+	background: none;
+    border: 3px solid $color-border-input;
+    background-color: $fondo-color-input-text;
+	color: $color-letra-input;
+	transition: all 0.5s ease;
+    border-radius: 0.3125rem ;
+    outline: none;
+    margin: 0.625rem auto;
+    font-family: 'Roboto', monospace, sans-serif;
+}
+
+//***********************************************
+//  FUNCIONES TEXT
+//***********************************************
+@mixin encabezados($color:$color-letra-contenedor-principal) {
+	color: $color;
+	text-align: center;
+	height: auto;
+	text-transform: uppercase;
+	width: 100%;
+	font-family: 'Roboto', monospace, sans-serif;
+}
+
+//***********************************************
+//  FUNCIONES  DISPLAY
+//***********************************************
+@mixin display($fila:ceneter, $columna:center, $direccion:row, $wrap: wrap) {	
+    display:  flex;
+	flex-direction: $direccion;
+	flex-wrap: $wrap;
+	align-items: $columna;
+	justify-content: $fila;
+	height: auto;   
+}
+
+
+//***********************************************
+//  FUNCIONES POSITION
+//***********************************************
+@mixin  position($tipo:relative, $top:none, $left:none, $rigth:none, $botton:none, $height:auto, $width:auto) {
+	position: $tipo;
+	top: $top;
+	left: $left;
+	right: $rigth;
+	bottom: $botton;
+	height: $height;
+	width: $width;
+}

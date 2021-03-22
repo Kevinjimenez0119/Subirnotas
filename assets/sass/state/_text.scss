@@ -1,0 +1,50 @@
+@import "variables";
+@import "minxis";
+
+
+/***************************************************
+ **************** ENCABEZADOS **********************
+ ***************************************************/
+
+ .subtitulo {
+	@include encabezados();
+	font-style: italic;
+	font-size: 1.875rem;
+}
+
+.titulo {
+	@include encabezados();
+	font-size: 2rem;
+}
+
+/***************************************************
+ ********************* LABEL ***********************
+ ***************************************************/
+ .label{
+	@include encabezados();
+	width: auto;
+	padding: 1rem;
+	color:$color-text-label;
+	font-weight: bold;
+ }
+
+/***************************************************
+ ********************* OTROS ***********************
+ ***************************************************/
+ .span{
+     font-weight: bold;
+     text-transform: capitalize;
+     color:$color-letra-contenedor-principal;
+ }
+
+ .hr{
+	 margin: 1rem;
+	 border-style:solid;
+	 border-color: $color-border-hr;
+	 transition: border 1s linear;
+	 cursor: pointer;
+
+	 &:hover{
+		border-color: $color-border-hr-hover;
+	 }
+ }

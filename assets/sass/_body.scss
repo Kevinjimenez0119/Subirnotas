@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/***************************************************
+ ******************** BODY *************************
+ ***************************************************/
+body {
+  overflow-x: hidden;
+  perspective: 1;
+  transform-style: preserve-3d;
+  font-size: 16px;
+  font-family: 'Roboto', monospace, sans-serif;
+}

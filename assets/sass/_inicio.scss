@@ -1,0 +1,29 @@
+
+/***************************************************
+ ******************* INICIO ************************
+ ***************************************************/
+ .main-inicio{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(3, auto);
+     grid-template-areas: "Menu      Menu       Menu"
+                          "Section   Section    Section "
+                          "Footer    Footer     Footer";
+     gap: 1.5rem; 
+     
+     .menu-incio{
+        grid-area: Menu;    
+    }
+
+    .section{
+        grid-area: Section;
+    }
+
+    .footer{
+        grid-area: Footer;
+    }
+
+    .menu-incio,.footer{
+        background: $fondo-color-menu-inicio;
+    }
+}

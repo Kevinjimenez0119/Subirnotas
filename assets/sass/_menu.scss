@@ -1,0 +1,171 @@
+
+/***************************************************
+ ********************* MENU ************************
+ ***************************************************/
+ .menu-incio{ 
+    width: 100%;
+    box-shadow: $box-shadow-menu;
+
+    nav{
+        padding: 1rem;
+        ul{
+            list-style: none;
+            transition: all .7s linear;
+
+            // LOGO
+            &.items-logos{
+                li{
+                    .logo{
+                        width: 4rem;
+                        height: 4rem;
+                     }
+                }    
+            }
+
+            // ICONOS
+            &.items-iconos{
+                li{
+                    &.icono-menu{
+                        display: none;
+                    }
+                    .icono{
+                      width: 2.5rem;
+                      height: 2.5rem;
+                      margin: 0rem 1rem;
+                    }
+                }
+            }
+
+            // ENLACES
+            &.items{ 
+                &.visible{
+                    transform: translateY(0);
+                }
+
+                &.ocultar{
+                    transform: translateY(-100%); 
+                }
+
+                li{               
+                    .enlace{
+                        color:$color-letra-menu-inicio;
+                        text-transform: capitalize;
+                        font-weight: bold;
+                        font-size: 1rem;
+                        margin: 1rem;    
+
+                        &.cerrar-menu{
+                            .icono{
+                                width: 2.5rem;
+                                height: 2.5rem;
+                            }
+                            display: none;
+                        }               
+                    }
+                }
+            }
+
+            li{
+                &.displey-flex{
+                    .enlace{
+                        display: block;
+                        width: 100%;
+                    }
+
+                    span{
+                        color:$verde-claro;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    } 
+
+    @media screen and (max-width: 950px) {
+        nav{
+            ul{
+                &.items-iconos{
+                    li{
+                        &.icono-menu{
+                            display: block;
+                            position: none;
+                        }
+                    }
+                }
+
+                &.items{
+                    display: none;
+
+                    &.visible{
+                        display: flex;
+                        transform: translateY(0);
+                    }
+    
+                    &.ocultar{
+                        display: flex;
+                        transform: translateY(-100%); 
+                    }
+
+                    position: fixed;
+                    background: $fondo-color-menu-inicio;
+                    top:0;
+                    left: 0;
+                    right: 0;
+                    height: 100vh;
+                    z-index: 9000;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    li{
+                        width: 100%;
+                        text-align: center;
+                        margin: 1rem 0rem;
+
+                        .enlace{
+                            &.cerrar-menu{
+                                display: block;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                            } 
+                        }    
+                    }         
+                }
+
+                li{
+                    &.icono-menu{
+                        display: block;
+                    }  
+
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        nav{
+            ul{
+                &.items-logos,
+                &.items-iconos{
+                    width: 100%;                
+                }
+
+                &.items-logos{
+                    margin-bottom: 0.7rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 220px) {
+        nav{
+            ul{
+                &.items-iconos{
+                    li{
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+ }

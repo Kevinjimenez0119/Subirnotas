@@ -1,0 +1,57 @@
+@import "variables";
+@import "minxis";
+
+/***************************************************
+ **************** CONTENEDORES *********************
+ ***************************************************/
+
+//***********************************************
+// CONTENEDORES
+//***********************************************
+
+/* CONTENEDOR */
+.contenedor {
+    @include contenedor();
+	transition: all 0.5s linear;
+}
+
+.contenedor-principal {
+	@include contenedor($fondo-contenedor-principal);
+}
+
+//***********************************************
+// CONTENEDORES INTERLINEADOS
+//***********************************************
+.linea{
+    padding: 1rem;
+    label{
+      text-align: center;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+
+    .input-text{
+        max-width: 20rem;
+        border: 1px solid;
+
+        &:focus{
+            background-color: $fondo-color-input-dos;
+            color:$blanco;
+        }
+	}
+	
+	.input-text-area{
+		border: 1px solid;
+		align-items: initial;
+		&:focus{
+            background-color: $fondo-color-input-dos;
+            color:$blanco;
+        }
+	}
+}
+
+.linea-dos{
+    .linea{
+        width: 50%;
+    }
+}

@@ -1,0 +1,36 @@
+@import "variables";
+@import "minxis";
+
+ 
+
+/***************************************************
+ ******************* BOTONES ***********************
+ ***************************************************/
+ .btn{
+    @include botones($fondo-color-btn);
+    border-radius: 1rem;
+
+    &:hover{
+        color: $fondo-color-btn;
+        background-color: $color-letra-btn;
+        transform: scale(0.95);
+    }
+ }
+ 
+
+ /***************************************************
+  ******************* ENLACES ***********************
+  ***************************************************/
+
+ .enlace {
+    @include botones();
+    padding: 0rem;
+    color:$color-letra-enlace;
+
+    &:hover{
+        &:hover{
+            opacity: 0.8;
+            background-color: transparent;
+        }
+    }
+ }

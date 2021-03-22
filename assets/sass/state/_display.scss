@@ -1,0 +1,12 @@
+@import "minxis";
+
+/***************************************************
+ **************** DISPLAY **************************
+ ***************************************************/
+.displey-flex{
+	@include display(center,center,row,wrap);
+}
+
+.displey-flex-between{
+	@include display(space-between);
+}

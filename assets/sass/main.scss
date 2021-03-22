@@ -1,0 +1,16 @@
+@import "state/sb";
+
+@import "body";
+@import "login";
+@import "image";
+
+
+@import "inicio";
+@import "menu";
+@import "registro_informacion";
+
+@import "admi/admi";
+
+// cd C:/xampp/htdocs/Proyecto/assets
+// sass sass/main.scss:css/main.css
+// sass --watch sass/main.scss:css/main.css
